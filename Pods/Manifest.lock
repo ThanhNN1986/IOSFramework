@@ -1,10 +1,18 @@
 PODS:
   - Alamofire (3.2.0)
+  - Bolts (1.6.0):
+    - Bolts/AppLinks (= 1.6.0)
+    - Bolts/Tasks (= 1.6.0)
+  - Bolts/AppLinks (1.6.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.6.0)
 
 DEPENDENCIES:
   - Alamofire
+  - Bolts
 
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
+  Bolts: f52a250053bb517ca874523c3913776359ab3def
 
 COCOAPODS: 0.39.0

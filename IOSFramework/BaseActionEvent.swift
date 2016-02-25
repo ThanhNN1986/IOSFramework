@@ -8,19 +8,19 @@
 
 import UIKit
 
-enum actionEvent {
+enum ActionEvent {
     case login
     case register
 }
 
 class BaseActionEvent: NSObject {
-    var action: actionEvent
+    var action: ActionEvent
     var sender: NetworkDelegate?
     var viewData: NSObject?
     var tag: Int
     
     override init() {
-        action = actionEvent.login
+        action = ActionEvent.login
         sender = nil
         viewData = nil
         tag = 0

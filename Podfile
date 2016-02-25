@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'IOSFramework' do
 pod 'Alamofire’
+pod 'Bolts'
 end
 
 target 'IOSFrameworkTests' do

@@ -14,6 +14,12 @@
 		924B4EAF1C7E06920059988B /* BaseActionEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B4EAE1C7E06920059988B /* BaseActionEvent.swift */; };
 		924B4EB41C7E09FB0059988B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924B4EB21C7E09FB0059988B /* LoginView.swift */; };
 		924B4EB51C7E09FB0059988B /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 924B4EB31C7E09FB0059988B /* LoginView.xib */; };
+		925D96EE1C7EDF120021740D /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D96ED1C7EDF120021740D /* AppController.swift */; };
+		925D96F11C7EE2CC0021740D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D96F01C7EE2CC0021740D /* Constant.swift */; };
+		925D96F51C7EEE4A0021740D /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D96F41C7EEE4A0021740D /* ApiRequest.swift */; };
+		925D96F71C7EEEF50021740D /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D96F61C7EEEF50021740D /* ApiResponse.swift */; };
+		925D96F91C7EEF700021740D /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D96F81C7EEF700021740D /* ApiClient.swift */; };
+		925D96FB1C7EEFB50021740D /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D96FA1C7EEFB50021740D /* ApiError.swift */; };
 		92A556CF1C7DFCFA0089C187 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A556CE1C7DFCFA0089C187 /* AppDelegate.swift */; };
 		92A556D11C7DFCFA0089C187 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A556D01C7DFCFA0089C187 /* ViewController.swift */; };
 		92A556D41C7DFCFA0089C187 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A556D21C7DFCFA0089C187 /* Main.storyboard */; };
@@ -51,6 +57,12 @@
 		924B4EAE1C7E06920059988B /* BaseActionEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseActionEvent.swift; sourceTree = "<group>"; };
 		924B4EB21C7E09FB0059988B /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		924B4EB31C7E09FB0059988B /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		925D96ED1C7EDF120021740D /* AppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		925D96F01C7EE2CC0021740D /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		925D96F41C7EEE4A0021740D /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		925D96F61C7EEEF50021740D /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		925D96F81C7EEF700021740D /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		925D96FA1C7EEFB50021740D /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		92A556CB1C7DFCFA0089C187 /* IOSFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A556CE1C7DFCFA0089C187 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92A556D01C7DFCFA0089C187 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +133,33 @@
 			name = Service;
 			sourceTree = "<group>";
 		};
+		925D96EF1C7EE2B00021740D /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				925D96F01C7EE2CC0021740D /* Constant.swift */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		925D96F21C7EEE0E0021740D /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				925D96F31C7EEE1C0021740D /* Network */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		925D96F31C7EEE1C0021740D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				925D96F41C7EEE4A0021740D /* ApiRequest.swift */,
+				925D96F61C7EEEF50021740D /* ApiResponse.swift */,
+				925D96F81C7EEF700021740D /* ApiClient.swift */,
+				925D96FA1C7EEFB50021740D /* ApiError.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		92A556C21C7DFCF90089C187 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +185,8 @@
 		92A556CD1C7DFCFA0089C187 /* IOSFramework */ = {
 			isa = PBXGroup;
 			children = (
+				925D96F21C7EEE0E0021740D /* Lib */,
+				925D96EF1C7EE2B00021740D /* Commons */,
 				92A556FE1C7DFD470089C187 /* Model */,
 				92A556FD1C7DFD3E0089C187 /* Controller */,
 				92A556FC1C7DFD320089C187 /* VIew */,
@@ -188,6 +229,7 @@
 		92A556FD1C7DFD3E0089C187 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				925D96ED1C7EDF120021740D /* AppController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -402,13 +444,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				925D96F71C7EEEF50021740D /* ApiResponse.swift in Sources */,
 				924B4EA61C7E03760059988B /* BaseView.swift in Sources */,
 				924B4EB41C7E09FB0059988B /* LoginView.swift in Sources */,
+				925D96F11C7EE2CC0021740D /* Constant.swift in Sources */,
 				924B4EAD1C7E06840059988B /* BaseModelEvent.swift in Sources */,
+				925D96EE1C7EDF120021740D /* AppController.swift in Sources */,
 				924B4EAB1C7E065D0059988B /* AppService.swift in Sources */,
 				924B4EAF1C7E06920059988B /* BaseActionEvent.swift in Sources */,
 				92A556D11C7DFCFA0089C187 /* ViewController.swift in Sources */,
+				925D96F51C7EEE4A0021740D /* ApiRequest.swift in Sources */,
 				92A556CF1C7DFCFA0089C187 /* AppDelegate.swift in Sources */,
+				925D96FB1C7EEFB50021740D /* ApiError.swift in Sources */,
+				925D96F91C7EEF700021740D /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
