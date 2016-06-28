@@ -24,7 +24,7 @@ class ViewController: BaseView {
         myFirstButton.setTitle("✸", forState: .Normal)
         myFirstButton.setTitleColor(UIColor.blueColor(), forState: .Normal)
         myFirstButton.frame = CGRectMake(15, -50, 300, 500)
-        myFirstButton.addTarget(self, action: "pressed:", forControlEvents: .TouchUpInside)
+        myFirstButton.addTarget(self, action: #selector(ViewController.pressed(_:)), forControlEvents: .TouchUpInside)
 //        myFirstButton.addTarget(self, action: "pressed", forControlEvents: .TouchUpInside)
         self.view.addSubview(myFirstLabel)
         self.view.addSubview(myFirstButton)
